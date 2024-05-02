@@ -10,7 +10,7 @@ beforeEach( () => {
  c = 3;
 })
 
-test('sum shougld be correct', () => {
+test('sum should be correct', () => {
     //action
     const result1 = sum(a, b);
     const result2 = sum(b, c);
