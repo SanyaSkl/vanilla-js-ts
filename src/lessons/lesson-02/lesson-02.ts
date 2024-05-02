@@ -1,3 +1,56 @@
+type LocalCityType = {
+    title: string,
+    countryTitle: string
+}
+
+type AddressType = {
+    streetTitle: string
+    city: LocalCityType
+}
+
+type TechnologiesType = {
+    id: number
+    title: string
+}
+
+export type StudentType = {
+    id: number
+    name: string
+    age: number
+    isActive: boolean
+    address: AddressType
+    technologies: Array<TechnologiesType>
+}
+
+export const student: StudentType = {
+    id: 1,
+    name: "Alexandr",
+    age: 31,
+    isActive: true,
+    address: {
+        streetTitle: "Sergievskaya 20",
+        city: {
+            title: "Staryy Oskol",
+            countryTitle: "Russia"
+        }
+    },
+    technologies: [
+        {
+            id: 1,
+            title: "HTML"
+        },
+        {
+            id: 2,
+            title: "CSS"
+        },
+        {
+            id: 3,
+            title: "React"
+        }
+    ]
+}
+
+
 type YearOfBirthType = {
     year: number
     month: string
@@ -10,7 +63,7 @@ type OwnerListType = {
     yearOfBirth: YearOfBirthType
 }
 
-type  CarListType  = {
+type  CarListType = {
     id: number
     brand: string
     model: string
