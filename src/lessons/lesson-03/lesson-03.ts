@@ -1,9 +1,9 @@
 import {StudentType} from "../lesson-02/lesson-02";
-import {HouseType} from "../lesson-02/lesson-02-02";
+import {governmentBuildings, HouseType} from "../lesson-02/lesson-02-02";
 
-const sum = (a: number, b: number) => {
-    return a + b;
-}
+// const sum = (a: number, b: number) => {
+//     return a + b;
+// }
 
 export const addSkill = (student: StudentType, skill: string) => {
     student.technologies.push({
@@ -20,7 +20,7 @@ export const doesStudentLiveIn = (s: StudentType, cityName: string) => {
     return s.address.city.title === cityName;
 }
 
-export const addMoneyToBudget = (building: GovernmentBuildingsType, budget: number) => {
+export const addMoneyToBudget = (building: governmentBuildings, budget: number) => {
     building.budget += budget
 }
 
