@@ -3,10 +3,10 @@ import {addMoneyToBudget, repairedHouse, toFireStaff, toHireStaff} from "./lesso
 
 
 
-let city: CityType;
+let cityFunc: CityType;
 
 beforeEach(() => {
-    city = {
+    cityFunc = {
         title: "New York",
         houses: [{
             builtAt: 2012, repaired: false,
@@ -46,30 +46,30 @@ beforeEach(() => {
 
 
 test("Budget should be changed for HOSPITAL ", () => {
-    addMoneyToBudget(city.governmentBuildings[0], 100000);
-    expect(city.governmentBuildings[0].budget).toBe(300000)
+    addMoneyToBudget(cityFunc.governmentBuildings[0], 100000);
+    expect(cityFunc.governmentBuildings[0].budget).toBe(300000)
 })
 
 test("Budget should be changed for FIRE-STATION", () => {
-    addMoneyToBudget(city.governmentBuildings[0], -100000);
+    addMoneyToBudget(cityFunc.governmentBuildings[0], -100000);
 
-    expect(city.governmentBuildings[1].budget).toBe(400000);
+    expect(cityFunc.governmentBuildings[1].budget).toBe(400000);
 })
 
 test("Houses should be repaired", () => {
-    repairedHouse(city.houses[1]);
+    repairedHouse(cityFunc.houses[1]);
 
-    expect(city.houses[1].repaired).toBeTruthy();
+    expect(cityFunc.houses[1].repaired).toBeTruthy();
 })
 
 test("staff should be increased", () => {
-    toFireStaff(city.governmentBuildings[0], 20);
+    toFireStaff(cityFunc.governmentBuildings[0], 20);
 
-    expect(city.governmentBuildings[0].staffCount).toBe(180);
+    expect(cityFunc.governmentBuildings[0].staffCount).toBe(180);
 })
 
 test("staff should be repaired", () => {
-    toHireStaff(city.governmentBuildings[0], 20);
+    toHireStaff(cityFunc.governmentBuildings[0], 20);
 
-    expect(city.governmentBuildings[0].staffCount).toBe(220);
+    expect(cityFunc.governmentBuildings[0].staffCount).toBe(220);
 })
