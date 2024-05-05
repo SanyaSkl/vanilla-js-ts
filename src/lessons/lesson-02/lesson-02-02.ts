@@ -14,7 +14,7 @@ export type HouseType = {
 
  }
 
- type governmentBuildings = {
+export type governmentBuildings = {
      type: string
      budget: number
      staffCount: number
