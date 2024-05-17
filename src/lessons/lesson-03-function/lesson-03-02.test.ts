@@ -1,4 +1,4 @@
-import {CityType} from "../lesson-02/lesson-02-02";
+import {CityType} from "../lesson-02-object/lesson-02-02";
 import {addMoneyToBudget, repairedHouse, toFireStaff, toHireStaff} from "./lesson-03";
 
 

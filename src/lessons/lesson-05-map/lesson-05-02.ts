@@ -1,4 +1,4 @@
-import {governmentBuildings, HouseType} from "../lesson-02/lesson-02-02";
+import {governmentBuildings, HouseType} from "../lesson-02-object/lesson-02-02";
 
 
 export const getStreetsTitlesOfGovernmentBuildings =

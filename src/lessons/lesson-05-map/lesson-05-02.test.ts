@@ -1,4 +1,4 @@
-import {CityType} from "../lesson-02/lesson-02-02";
+import {CityType} from "../lesson-02-object/lesson-02-02";
 import {createMessages, getStreetsTitlesOfGovernmentBuildings, getStreetsTitlesOfHouses} from "./lesson-05-02";
 
 
