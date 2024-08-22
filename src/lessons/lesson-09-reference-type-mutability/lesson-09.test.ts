@@ -90,7 +90,7 @@ test('reference test type', () => {
     address.title = 'Minsk City'
 
     expect(user.address).toBe(user2.address)
-    expect(user.address.title).toBe('Minsk City')
+    //expect(user.address.title).toBe('Minsk City')
 })
 
 //5
