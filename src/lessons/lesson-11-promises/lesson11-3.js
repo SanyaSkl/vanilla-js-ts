@@ -4,7 +4,6 @@
 //
 //
 // import {Simulate} from "react-dom/test-utils";
-// import error = Simulate.error;
 //
 // function getNumber() {
 //     //const promise = Promise.resolve(Math.random())
@@ -45,24 +44,43 @@
 //             }
 //         })
 //         return promise
+//     },
+//     read() {
+//         return new Promise((res, rej) => {
+//
+//             const  data = localStorage.getItem('some-key')
+//             if (!data) {res(null)}
+//             else {
+//                 res(JSON.parse(data))
+//             }
+//
+//         })
 //     }
 // }
 //
 // const result = repo.save({name: 'IT-Kamasutra'})
-// if(result) {
-//     console.log('SAVED')
-// } else {
-//     console.warn('NOT SAVED')
-// }
-//
+// console.log('SAVED')
+// // -----------------------------------------------------
+// // if(result) {
+// //     console.log('SAVED')
+// // } else {
+// //     console.warn('NOT SAVED')
+// // }
+// //-----------------------------------------------------
 // repo.saveAsync({name: 'IT-Kamasutra'})
 //     .then(() => console.log('SAVED'))
-//     .catch(error =>  console.warn('NOT SAVED: ' + error))
+//     .catch(error => console.warn('NOT SAVED: ' + error))
 //
 // const run = async () => {
 //     await repo.saveAsync({name: 'IT-Kamasutra'})
-//         .then(() => console.log('SAVED'))
+//     console.log('SAVED')
+//
 //     const data = await repo.read()
 //     console.log(data)
+//     // -----------------------------------------------------
+//     //.then(() => console.log('SAVED'))
+//     // const data = await repo.read()
+//     // console.log(data)
+//     // -----------------------------------------------------
 // }
 // run()
